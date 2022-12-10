@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="activity.html">Quilling</a>
+        <a href="activity2.html">Badminton</a>
+        <a href="activity3.html">Drawing</a>
+        <a href="activity4.html">Congkak</a>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+    <div id="activiti2">
+        <div class="activity2-container">
+            <div class="activity2-row">
+                <div class="activity2-column1">
+                    <h1 class="sub-title1">Activity</h1>
+					    <div style="height:600px; margin:30px;">
+                            <h2 style:>Badminton</h2>
+  								<p style="line-height: 2.0; font-size:20px; color:black;">
+                                    Badminton is a racket sport played by either two opposing players (singles) or two opposing pairs (doubles), who take positions on opposite halves of a rectangular court that is divided by a net. 
+                                    Players score points by striking a shuttlecock with their racket so that it passes over the net and lands in their opponents' half of the court. 
+                                    A rally ends once the shuttlecock has struck the ground, and the shuttlecock may only be struck once by each side before it passes over the net.
+                                    When i have time, i also play badminton with my younger brother. But i always lose. I loved to watch badminton championship with my father. 
+                                    if there is a match, my father always let me know.
+
+                                    <br>
+                                    Tools: Racket, shuttlecock, badminton shoes and badmintone atire.
+								</p>
+						</div>
+                </div>
+                <div class="activity2-column2">
+                    <image src = "image/badminton.jpeg" ></image>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+    </div>
+
+    
+</body>
+</html>

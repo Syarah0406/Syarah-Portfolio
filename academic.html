@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div id="mySidenav1" class="sidenav1">
+        <a href="javascript:void(0)" class="closebtn1" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="academic.html">Academic Achievement</a>
+        <a href="activities.html">Activities</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      
+      <div id="main1">
+        
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav1").style.width = "250px";
+        document.getElementById("main1").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav1").style.width = "0";
+        document.getElementById("main1").style.marginLeft= "0";
+      }
+      </script>
+             
+
+    <div id="academic">
+        <center><image src = "image/font.png" ></image></center>
+        <div class="tab">
+            <button class="tablinks" onclick="openButton(event, 'spm')" id="defaultOpen">SPM</button>
+            <button class="tablinks" onclick="openButton(event, 'stpm')">STPM</button>
+            <button class="tablinks" onclick="openButton(event, 'degree')">DEGREE</button>
+        </div>
+
+        <div id="spm" class="tabcontent">
+            <center>
+                <br><h2>Sijil Pelajaran Malaysia</h2>
+            </center>
+            <p style="line-height: 2.0; font-size:20px;">
+                In 2018, at SMK Siong, i took 10 subject in this examination which is six subject core and 4 subject elective.
+                The result that i got were 2A 1B+ 1B 3C+.<br>
+                I got a position as "School prefect"
+            </p><br>
+            <center><image src = "image/spm.png" style="width:200px; height:200px;"></image></center>
+        </div>
+
+        <div id="stpm" class="tabcontent">
+            <center>
+                <br><h2>Sijil Tinggi Pelajaran Malaysia</h2>
+            </center>
+            <p style="line-height: 2.0; font-size:20px;">
+                In 2019 and 2020, i took the three semester in STPM at SMK Baling. For the final result, i got award of best student in Information Technology class. The pointer that i got was 3.50.<br>
+                1st semester: 2.58 &nbsp;
+                2nd semester: 3.50 &nbsp;
+                3rd semester: 3.0
+            </p><br>
+                <center><image src = "image/stpm.png" style="width:150px; height:150px;"></image></center>
+        </div>
+
+        <div id="degree" class="tabcontent">
+            <center>
+                <br><h2>Bachelor of Information Technology (Informatic Media)</h2>
+            </center>
+            <p style="line-height: 2.0; font-size:20px;">
+                In the second semester of my degree at Universiti Sultan Zainal Abidin, i got my first dean. The pointer that i got was 3.56.
+               </p><br>
+               <center><image src = "image/Universiti-Sultan-Zainal-Abidin-UniSZA-Logo.png" style="width:400px; height:200px;"></image></center>
+        </div>
+
+        <script>
+            function openButton(evt, AcademicName) {
+             var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(AcademicName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+
+        // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+    </div> 
+    
+    
+</body>
+</html>

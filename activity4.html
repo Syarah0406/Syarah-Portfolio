@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="activity.html">Quilling</a>
+        <a href="activity2.html">Badminton</a>
+        <a href="activity3.html">Drawing</a>
+        <a href="activity4.html">Congkak</a>
+      </div>
+      
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+    <div id="activiti4">
+        <div class="activity4-container">
+            <div class="activity4-row">
+                <div class="activity4-column1">
+                    <h1 class="sub-title1">Activity</h1>
+					    <div style="height:600px; margin:30px;">
+                            <h2 style:>Congkak</h2>
+  								<p style="line-height: 2.0; font-size:20px; color:black;">
+                                    Congkak is a traditional Malay game often played as an indoor activity or as a competition. 
+                                    Often, it uses hollow perforated wooden planks or holes on the ground and usually a ‘buah’ (game piece) using rubber seeds or marbles.
+                                    In a Congkak set, there are two components which are the Congkak board and Congkak piece. 
+                                    The board are shaped like boats and can be made from different types of wood or by digging holes on the ground. 
+                                    There are five to seven inline holes known as 'kampung' (village) and at both ends there is a main hole known as 'rumah'(home). 
+                                    The lenght of the 7 holes Congkak board is usually around 80 cm wide and the diameter of the seven holes is usually about 18 cm.
+                                    <br><br>
+                                    
+								</p>
+                                <left-side> <image src = "image/congkak1.jpeg" style="width:100px;height:200px;"></image></left-side> &nbsp;&nbsp;&nbsp;&nbsp;
+								<image src = "image/guli.jpg" style="width:300px;height:200px;"></image> &nbsp; &nbsp; &nbsp;
+						</div>
+                </div>
+                <div class="activity4-column2">
+                    <image src = "image/congkak.png" ></image>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+    </div>
+
+    
+</body>
+</html>

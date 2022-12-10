@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="activity1.html">Quilling</a>
+        <a href="activity2.html">Badminton</a>
+        <a href="activity3.html">Drawing</a>
+        <a href="activity4.html">Congkak</a>
+      </div>
+
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+
+    <div id="activiti1">
+        <div class="activity1-container">
+            <div class="activity1-row">
+                <div class="activity1-column1">
+                    <h1 class="sub-title1">Activity</h1>
+					    <div style="height:600px; margin:30px;">
+                            <h2 style:>Quilling</h2>
+  								<p style="line-height: 2.0; font-size:20px; color:black;">
+                                    Quilling is an art form that involves the use of strips of paper that are rolled, shaped, and glued together to create decorative designs. 
+                                    During leisure time, i really love to do this activity. even if some people find this quilling hobby challenging and tough. 
+                                    But, when the work I want to do materialises, I am overjoyed. My family and friends like the quilling I give them as gifts.
+                                    <br>
+                                    Tools: Paper, Glue, and Quilling Tools.
+								</p>
+                                <left-side> <image src = "image/quilling1.jpg" style="width:100px;height:200px;"></image></left-side> &nbsp;&nbsp;&nbsp;&nbsp;
+								<image src = "image/quilling2.jpg" style="width:300px;height:200px;"></image> &nbsp; &nbsp; &nbsp;
+								<image src = "image/quilling3.jpg" style="width:300px;height:200px;"></image>
+						</div>
+                </div>
+                <div class="activity1-column2">
+                    <image src = "image/quilling.png" ></image>
+				</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+      <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+    </div>
+       
+</body>
+</html>

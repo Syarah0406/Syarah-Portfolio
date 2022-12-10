@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div id="mySidenav1" class="sidenav1">
+        <a href="javascript:void(0)" class="closebtn1" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="academic.html">Academic Achievement</a>
+        <a href="activities.html">Activities</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      
+      <div id="main1">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav1").style.width = "250px";
+        document.getElementById("main1").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav1").style.width = "0";
+        document.getElementById("main1").style.marginLeft= "0";
+      }
+      </script>
+         
+<div id="activities">
+    <header class ="Activities">
+        <div class="activities-container">
+            <div class="activities-text">
+                <h1>Activities</h1>
+                <h4>~Happiness is a state of a activity~</h4>
+            </div>
+        </div>  
+    </header>
+
+
+    <section class="activity-container">
+    <div class="tags-container">
+        <center><h4>Activities List</h4></center>
+    </div>
+
+    <div class="activity-list">
+        <a href="activity1.html" class="activity">
+            <image src="image/quilling.png" style= "width:300px; height:300px;" alt="activity" class="img activity-img"></image>
+            <h5>Quilling</h5><br>
+        </a>
+
+        <a href="activity2.html" class="activity">
+            <image src="image/badminton.jpeg" style= "width:300px; height:300px;" alt="activity" class="img activity-img"></image>
+            <h5>Badminton</h5><br>
+        </a>
+
+        <a href="activity3.html" class="activity">
+            <image src="image/drawing.jpeg" style= "width:300px; height:300px;" alt="activity" class="img activity-img"></image>
+            <h5>Drawing</h5><br>
+        </a>
+
+        <a href="activity4.html" class="activity">
+            <image src="image/congkak.png" style= "width:300px; height:300px;" alt="activity" class="img activity-img"></image>
+            <h5>Congkak</h5><br>
+        </a>
+    </div>
+    </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div id="mySidenav1" class="sidenav1">
+        <a href="javascript:void(0)" class="closebtn1" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About me</a>
+        <a href="academic.html">Academic Achievement</a>
+        <a href="activities.html">Activities</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      
+      <div id="main1">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+      
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav1").style.width = "250px";
+        document.getElementById("main1").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav1").style.width = "0";
+        document.getElementById("main1").style.marginLeft= "0";
+      }
+      </script>
+         
+
+<div id="about">
+    <div class="about-row">
+         <div class="about-column1">
+            <h1 class="about-sub-title">About Me</h1>
+                <p style="font-size:20px";>Let me tell you a little infomation about me</p>
+                <div style="height:600px; margin:30px;">
+                    <p style="line-height: 2.0; font-size:20px;">
+                        Hello everyone... <br> My name is Nur Syarah Bt Abdullah and my friend call me syarah. I am 21 years old.
+                        I am in the third semester of bachelor in Information Technology (information media)at UniSZA. 
+                        Now, i am in the second years of my degree. I have six siblings and i am the number 4.
+                        I was born in Sabah and now i live in Baling, Kedah. During my leisure time, i like to listen some music,
+                        watch drama and do art work. The reason i choose this course for my degree is because i want to explore more
+                        about this course and i hope i will get 4.0 pointer in every semester. My dream is i want become a database 
+                        administrator one day. Insya allah... :)
+                    </p>
+                        <left-side> <image src = "image/music.png" style="width:200px;height:300px;"></image></left-side>
+                        <image src = "image/art.png" style="width:200px;height:300px;"></image> &nbsp; &nbsp; &nbsp; &nbsp;
+                        <image src = "image/drama.png" style="width:200px;height:300px;"></image>
+                </div>
+            </div>
+            <div class="about-column2">
+                <image src = "image/syarah2.png" ></image>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
